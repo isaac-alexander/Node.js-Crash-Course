@@ -1,0 +1,39 @@
+            WHAT IS NODE.JS?
+
+- Node.js is a JavaScript runtime and a runtime is a program or an environment that runs other programs
+
+- Node.js was built with c++ and it uses the V8 JavaScript engine that's also used with Google Chrome web browser
+
+- Node.js is mostly used for developing server-side & network applications/apis
+
+            HOW NODE.JS WORKS
+
+- V8 JS ENGINE => Node is built ontop of the V8 JavaScript engine. The V8 engine is written in c++ and it takes your JavaScript code and converts it into machine code
+
+- Non-Blocking  => It doesn't wait around for I-O operations which are Input - Output operationsand those are things like Network calls, file system operations, database operations and instead of blockking the execution of code while waiting for these things to happen or these to complete, node.js uses events and callbacks and this allows it to handle thousands of connections at the same time
+
+- Single Threaded
+
+- Event Loop
+
+            HOW TO SETUP NEW NODE.JS PROJECT
+
+- Download Node Js from the site
+- In your command line use node -- version to check the version
+- npm -- version to check the version 
+- To use node.js from the command line node then enter
+
+- To use from Vs code
+- In your command line make a directory mkdir nodejs-nameYouWant 
+- CD into that folder cd nodejs-folderName
+- Then open the text editor/vs code with code .
+
+Create an entry point(main file) => index.js or app.js or server.js
+
+# To use ES modules, in the package.json file, below the main key, add a type and the value set to module. that is "type": "module"
+
+
+        WAYS TO EXPORT
+1.  export const functionName = () => ;
+2.  export { functionName };
+3.  export default functionName;

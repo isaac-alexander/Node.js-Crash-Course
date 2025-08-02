@@ -37,3 +37,21 @@ Create an entry point(main file) => index.js or app.js or server.js
 1.  export const functionName = () => ;
 2.  export { functionName };
 3.  export default functionName;
+
+                
+    "start": "node server.js" npm start
+    "dev": "node server.js" npm run dev
+
+        TO INSTALL NODEMON
+npm install nodemon
+To install it as a Dev dependency npm install -D nodemon
+
+        TO USE NODEMON
+- in the package.json use "start": "nodemon server.js" in the script then npm start from the terminal
+
+        TO USE .env
+- Create a .env file
+- Set PORT=8080 or 8000
+- Update your package.json file "start": "nodemon --env-file=.env server.js"
+- Update your server.js to use port.
+ const PORT = process.env.PORT;
